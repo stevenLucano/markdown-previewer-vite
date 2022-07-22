@@ -1,0 +1,47 @@
+.window {
+
+    border: 1px solid black;
+    box-shadow: 0 0 5px rgb(93, 93, 93),
+        0 0 10px rgb(80, 80, 80);
+    ;
+
+    &-title{
+        height: 35px;
+        text-transform: capitalize;
+        background: #1976d2 ;
+        color: white;
+        border-bottom: 1px solid black;
+        user-select: none;
+        margin: 0;
+    }
+
+    &-editor{
+        width: 590px;
+        margin: 2vh;
+    }
+
+    #editor {
+        min-height: 200px;
+        max-height: 80vh;
+        margin-bottom: -3px;
+        min-width: 588px;
+        resize: vertical;
+        background: #bbdefb;
+        outline: none;
+        border: none;
+        padding: 5px;
+        font-size: 14px;
+        font-family: monospace;
+    }
+
+    &-previewer{
+        width: 800px;
+        margin-bottom: 2vh;
+    }
+
+    #preview{
+        background: #bbdefb;
+        user-select: none;
+        padding: 10px 16px;
+    }
+}
