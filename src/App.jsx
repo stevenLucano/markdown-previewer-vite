@@ -10,7 +10,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch("./src/files/file.txt")
+    fetch("./files/file.txt")
       .then((res) => res.text())
       .then((content) => {
         setContent(content);
