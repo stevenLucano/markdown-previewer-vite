@@ -42,7 +42,7 @@
     #editor {
         min-height: 200px;
         max-height: 80vh;
-        margin-bottom: -3px;
+        margin-bottom: -4px;
         min-width: 588px;
         resize: vertical;
         background: #bbdefb;
@@ -62,5 +62,35 @@
         background: #bbdefb;
         user-select: none;
         padding: 10px 16px;
+    }
+}
+
+@media (max-width: 850px){
+    .window{
+        &-editor{
+            width: 540px;
+        }
+
+        #editor{
+            min-width: 538px;
+        }
+        &-previewer{
+            width: 630px;
+        }
+    }
+}
+
+@media (max-width: 660px){
+    .window{
+        &-editor{
+            width: 80vw;
+        }
+
+        #editor{
+            min-width: calc(80vw - 2px);
+        }
+        &-previewer{
+            width: 90vw;
+        }
     }
 }
