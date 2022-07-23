@@ -31,14 +31,16 @@ const WindowPreviewer = ({ name, contentTxt, fnc }) => {
       icon.classList.remove("bi-arrows-fullscreen");
       icon.classList.add("bi-arrows-angle-contract");
     } else {
-      const icons = document.getElementsByClassName("icon-bootstrap");
-      const windows = document.getElementsByClassName("window");
+      let icons = document.getElementsByClassName("icon-bootstrap");
+      let windows = document.getElementsByClassName("window");
 
+      icons = [...icons];
       icons.forEach((icon) => {
         icon.classList.remove("bi-arrows-angle-contract");
         icon.classList.add("bi-arrows-fullscreen");
       });
 
+      windows = [...windows];
       windows.forEach((window) => {
         window.style.display = "";
       });
